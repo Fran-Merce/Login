@@ -24,6 +24,8 @@
     justify-content: center;
     background-color: rgba(79, 79, 79, 0.426);
     border-radius: 30px;
+    filter: blur(3px);
+    transition: all .7s;
 }
 
 
@@ -42,6 +44,7 @@
     margin: 10px 0;
     width: 55%;
     font-family: 'Anton', sans-serif;
+    
 }
 
 .form__div input{
@@ -54,7 +57,7 @@
     outline: none;
     border-bottom: 3px solid rgb(0, 0, 0);
     background: transparent;
-    color: #fff;
+    color: rgb(0, 0, 0);
     margin-top:10px ;
     font-size: 1em;
     
@@ -62,10 +65,10 @@
 .form__div img{
     display: block;
     margin: auto;
-    width: 65%;
-    filter: grayscale(100%);
+    width: 65%;    
+    filter: grayscale(100%) ;
     margin-bottom:1.5em ;
-    
+    transition:all 1s;
 }
 
 .form__div .form__button{
@@ -90,6 +93,16 @@
 
 .form .a{
     margin-bottom: 2em;
+}
+
+
+.form:hover{
+    filter: none;
+    background-color: rgba(255, 255, 255, 0.515);
+    
+}
+.b:hover{
+    filter: none;
 }
 
 @media screen and (max-width:1400px) {
