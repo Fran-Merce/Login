@@ -26,7 +26,7 @@
     background-color: rgba(79, 79, 79, 0.426);
     border-radius: 30px;
     filter: blur(3px);
-    transition: all .1s;
+    transition: all .8s;
 }
 
 
@@ -85,10 +85,19 @@
     font-size: 1em;
     font-weight: 400;
     font-family: 'Varela Round', sans-serif;
-
+    position: relative;
 
 }
-
+/* .form__button::before{
+    content: "";
+    position: absolute;
+    
+    height: 32px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    
+} */
 .input::placeholder {
     color: rgb(255, 255, 255);
 }
