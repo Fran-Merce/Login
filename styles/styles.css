@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login-container{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(/assets/Screenshot_1.png);
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.form{
+    width: 25%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(79, 79, 79, 0.426);
+    border-radius: 30px;
+}
+
+
+
+.form__label{
+    display: block;
+    max-width: 120px;
+    text-align: start;
+    margin: 3px 0;
+    color: rgba(255, 255, 255, 0.933);
+    font-size: 1.1em;
+    letter-spacing: 3px;
+}
+
+.form__div{
+    margin: 10px 0;
+    width: 55%;
+    font-family: 'Anton', sans-serif;
+}
+
+.form__div input{
+    height: 2.3em;
+    width: 100%;
+    border: none;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    padding: .5em;
+    outline: none;
+    border-bottom: 3px solid rgb(21, 21, 21);
+    background: transparent;
+    color: #fff;
+    margin-top:10px ;
+    font-size: 1em;
+    
+}
+.form__div img{
+    display: block;
+    margin: auto;
+    width: 65%;
+    filter: grayscale(100%);
+    margin-bottom:1.5em ;
+    
+}
+
+.form__div .form__button{
+    width: 40%;
+    height: 2.3em;
+    border: none;
+    border: 2px solid rgb(21, 21, 21);
+    
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Varela Round', sans-serif;
+    
+    
+}
+
+.input::placeholder{
+    color: rgb(255, 255, 255);
+}
+
+.form .a{
+    margin-bottom: 2em;
+}
+
+@media screen and (max-width:1400px) {
+    .form{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+    .form{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .form{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:925px) {
+    .form{
+        width: 45%;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:700px) {
+    .form{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .form{
+        width: 80%;
+        font-size: 12px;
+    }
+    .form__div img{
+        margin-bottom: 1em;
+    }
+    .form__button{
+        font-size: 1em;
+        padding: 5px;
+    }
+}
